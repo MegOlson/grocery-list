@@ -6,9 +6,8 @@ $(document).ready(function() {
     items.forEach(function(item) {
       var userInput = $("input#" + item).val();
       $("." + item).text(userInput);
+      $("#list").hide();
     });
     $("#finalList").show();
   });
 });
-
-// document.write("I need " + userInput);
